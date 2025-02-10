@@ -20,9 +20,9 @@ Hello! I'm B Dhanush, a passionate professional with extensive experience in Dat
 
 ## Contact
 Feel free to reach out to me for any inquiries or collaborations:
-- Email: [your-email@example.com](mailto:dhanudhanudhanub@gmail.com.com)
-- LinkedIn: [your-linkedin-profile](https://www.linkedin.com/in/bdhanush/)
-- GitHub: [your-github-profile](https://github.com/demo-helloworld-1)
+- Email: [dhanudhanudhanub@gmail.com](mailto:dhanudhanudhanub@gmail.com.com)
+- LinkedIn: [B Dhanush](https://www.linkedin.com/in/bdhanush/)
+- GitHub: [demo-helloworld-1](https://github.com/demo-helloworld-1)
 
 View live demo here using GitHub Pages: [Live Demo](https://demo-helloworld-1.github.io)
 
