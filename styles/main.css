@@ -56,6 +56,37 @@ li{
     padding-bottom: 1em;
 }
 
+.custom-list {
+    list-style-type: none;
+}
+
+.custom-list li::before {
+    content: "✔️";
+    margin-right: 8px;
+    /* Adjust spacing as needed */
+}
+
+.custom-list-2 {
+    list-style-type: none;
+}
+
+.custom-list-2 > li::before {
+    content: "📜";
+    margin-right: 8px;
+    /* Adjust spacing as needed */
+}
+
+/* New specific styles for details-list */
+.details-list {
+    list-style-type: none; /* Ensure nested lists have no bullets */
+    margin-left: 20px; /* Adjust the margin to align with your layout */
+}
+
+.custom-list-2 > li > ul.details-list > li::before {
+    content: none; /* Remove any bullets/icons for nested list items */
+}
+
+
 #wrapper--hero{
     display: flex;
     align-items: center;
