@@ -1,252 +1,485 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>B Dhanush</title>
+    <title>B Dhanush - Data Engineer & ChatBot Developer</title>
     <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
-    <meta name="description" content="">
+    <meta name="description" content="B Dhanush - Professional Data Engineer, ChatBot Developer, and Cloud Specialist with expertise in GCP, Azure, and AI technologies">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Data Engineer, ChatBot Developer, Cloud Engineer, GCP, Azure, AI, Machine Learning, Python, JavaScript">
+    <meta name="author" content="B Dhanush">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="B Dhanush - Data Engineer & ChatBot Developer">
+    <meta property="og:description" content="Professional Data Engineer and ChatBot Developer specializing in Cloud technologies and AI solutions">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://demo-helloworld-1.github.io">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="./styles/main.css" as="style">
+    <link rel="preload" href="./assets/images/Profile.jpg" as="image">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/theme-switcher.css">
     <link rel="stylesheet" href="./styles/R&R.css">
     
-    
-
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
-    <div id="container--main">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">B Dhanush</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-        <section id="wrapper--hero" class="section--page">
-            <img id="profile-pic" src="./assets/images/Profile.jpg">
-
-            <div>
-                <h1 id="user-name">B Dhanush</h1>
-                <p id="bio">As a ChatBot Developer and Associate Trainee at LTIMindtree in Bangalore, I specialize in
-                    Data Engineering Principles and hold a Professional Data Engineer certification on GCP & SnowPro
-                    Core on Snowflake. Additionally, I am a GenAI Prompt Engineer</p>
-                <p id="email"> &#128236; DhanushBattepati@gmail.com</p>
-                <p id="phone-number">&#x1F4DE; +91 807 316 0196</p>
+    <main id="container--main">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img id="profile-pic" src="./assets/images/Profile.jpg" alt="B Dhanush Profile Picture">
+                </div>
+                <div class="hero-text">
+                    <h1 id="user-name">B Dhanush</h1>
+                    <p class="hero-subtitle">Data Engineer & ChatBot Developer</p>
+                    <p id="bio">As a ChatBot Developer and Associate Engineer at LTIMindtree in Bangalore, I specialize in
+                        Data Engineering Principles and hold a Professional Data Engineer certification on GCP & SnowPro
+                        Core on Snowflake. Additionally, I am a GenAI Prompt Engineer with expertise in AI technologies.</p>
+                    <div class="contact-info">
+                        <p id="email">&#128236; DhanushBattepati@gmail.com</p>
+                        <p id="phone-number">&#x1F4DE; +91 807 316 0196</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="section--page">
-
-            <div id="socials--list">
-                <a href="https://www.linkedin.com/in/bdhanush/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/demo-helloworld-1" target="_blank">Github</a>
-                <a href="./assets/Dhanush_B_Resume_2025_July.pdf" target="_blank">Download Resume</a>
+        <!-- Social Links Section -->
+        <section id="about" class="section--page">
+            <h2 class="section-title">About Me</h2>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/bdhanush/" target="_blank" class="social-link linkedin">
+                    <span class="social-icon">💼</span>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/demo-helloworld-1" target="_blank" class="social-link github">
+                    <span class="social-icon">🐙</span>
+                    GitHub
+                </a>
+                <a href="./assets/Dhanush_B_Resume_2025_July.pdf" target="_blank" class="social-link resume">
+                    <span class="social-icon">📄</span>
+                    Download Resume
+                </a>
             </div>
         </section>
 
-        <section class="section--page">
-            <h2>Total Professional Experience</h2>
-            <p id="experience"></p>
+        <!-- Experience Section -->
+        <section id="experience" class="section--page">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-card">
+                <h3>Total Professional Experience</h3>
+                <p id="experience" class="experience-duration"></p>
+            </div>
         </section>
         <script src="js/experience.js"></script>
         
-        <section class="section--page">
-            <h2>Skills & Experience</h2>
-            <ul id="qualifications--list" class="custom-list">
-                <li>1.5 Years practice in Data Engineering & Cloud</li>
-                <li>6 Months as ChatBot Developer with Microsoft Bot Framework using Node.js</li>
-                <li>9 Months as Conversational IVR Bot Developer with NLP using Azure</li>
-                <li>Content Partner and Junior SME on GCP for our Internal LMS</li>
-                <li>Created POC on EyeTracking, Scalable Services, CrossPlatform, Amazon Connect</li>
-            </ul>
-        </section>
-
-        <section class="section--page">
-            <h2>Tech stack</h2>
-
-            <div id="wrapper--techstack__items">
-                <div class="card--techstack"><span>Python, JavaScript, NodeJS</span></div>
-                <div class="card--techstack"><span>Azure, AWS, Google Cloud</span></div>
-                <div class="card--techstack"><span>NLP, CLU, Generative AI</span></div>
-                <div class="card--techstack"><span>MongoDB, MySQL, Cloud Databases</span></div>
-            </div>
-        </section>
-
-        <section id="work-history-wrapper" class="section--page">
-            <h2>Work History</h2>
-
-            <div class="card--work-history">
-                <strong>🚧 Associate Engineer | LTIMindtree</strong>
-                <p>01/2022 - present</p>
-                <p><strong>[Current Challenge]</strong>Worked on developing and implementing an IVR Bot for Currys,
-                    automating ticket status updates and reducing agent workload by handling over 1,000 calls daily.
-                    Integrated API calls to the Ticket System, cleansing data and converting it into conversational
-                    responses using TTS services. As a Content Partner, curated and validated over 250 Data and GenAI
-                    courses for the internal LMS, exploring and integrating new GenAI courses to stay ahead of market
-                    trends. Trained over 300 engineers on Google Cloud and Snowflake, focusing on certification
-                    preparation, and conducted virtual sessions with high feedback ratings. Led quick brush-up sessions
-                    on GCP Services, Azure Containers, and Data Fabric for over 100 learners. Currently pursuing an
-                    MTech in Computer Science with a specialization at BITS Pilani.</a></p>
-                <ul>
-                    <li>Enhanced the internal LMS by curating high-quality content for learners and providing training
-                        for certification preparation.</li>
-                    <li>Developed and implemented an IVR Bot for Currys, automating ticket status updates and
-                        significantly reducing agent workload.</li>
-                    <li>Supported practice teams in building demos for clients, showcasing innovative solutions and
-                        capabilities.</li>
-                    <li>Worked on an eye-tracking project using Python, contributing to research on engagement scores
-                        and website pattern recognition through heatmap analysis.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section--page">
-            <h2>Projects & Accomplishments</h2>
-
-            <div class="card--project">
-                <a href="project1.html"><span>🎯 </span>Worked on Client Project Implementing Voice Conversation IVR for
-                    one of the UseCase</a>
-            </div>
-
-            <div class="card--project">
-                <a href="project2.html"><span>🎯 </span>As a Content Partner brought 250+ Data and GenAI courses on
-                    LMS</a>
-            </div>
-
-            <div class="card--project">
-                <a href="project3.html"><span>🎯 </span>Trained more than 300+ Engineers on Google Cloud and Snowflake
-                    for cracking the Certification</a>
-            </div>
-
-            <div class="card--project">
-                <span>🎯 </span>Currently pursuing an MTech in Computer Science as specialization at BITS Pilani.
-            </div>
-
-        </section>
-
-        <section class="section--page">
-            <h2>Educational Qualifications</h2>
-            <ul id="qualifications--list" class="custom-list-2">
-                <li class="qualification-item">
-                    <strong>10th Grade: Secondary School Leaving Certificate</strong>
-                    <ul class="details-list">
-                        <li>Percentage: 78.56%</li>
-                        <li>Year of Completion: 2016</li>
-                        <li>School Name: Nivedita School</li>
+        <!-- Skills & Experience Section -->
+        <section id="skills" class="section--page">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Core Competencies</h3>
+                    <ul id="qualifications--list" class="custom-list">
+                        <li>1.5+ Years practice in Data Engineering & Cloud</li>
+                        <li>6 Months as ChatBot Developer with Microsoft Bot Framework using Node.js</li>
+                        <li>9 Months as Conversational IVR Bot Developer with NLP using Azure</li>
+                        <li>Content Partner and Junior SME on GCP for our Internal LMS</li>
+                        <li>Created POC on EyeTracking, Scalable Services, CrossPlatform, Amazon Connect</li>
                     </ul>
-                </li>
-                <li class="qualification-item">
-                    <strong>12th Grade: Pre University Education (Computer Science Stream)</strong>
-                    <ul class="details-list">
-                        <li>Percentage: 70.82%</li>
-                        <li>Year of Completion: 2018</li>
-                        <li>School Name: Independent PU College</li>
-                    </ul>
-                </li>
-                <li class="qualification-item">
-                    <strong>Bachelor's Degree: Bachelor of Computer Application</strong>
-                    <ul class="details-list">
-                        <li>Percentage: 8.82 C.G.P.A</li>
-                        <li>Year of Completion: 2021</li>
-                        <li>College/University Name: Vijayanagara Srikrishnadevaraya University, Bellary</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        
-
-        <section class="section--page"></section>
-        <h2>Training and Certifications</h2>
-
-        <div class="card--project">
-            <a href="https://www.credential.net/8ce04015-c4f5-438f-8fb2-926093792478?key=73790c2d0a9ad40a7065c43f235b8a411cd896fab2d79843900e4d368dd25fd6"
-                , target="_blank"><span>🎓</span>Google Certified: Associate Cloud Engineer</a>
-        </div>
-
-        <div class="card--project">
-            <a href="https://google.accredible.com/dd1b062d-147b-4d9e-82cd-ade91721a9d8" ,
-                target="_blank"><span>🎓</span>Google Certified: Professional Cloud Architect</a>
-        </div>
-
-        <div class="card--project">
-            <a href="https://achieve.snowflake.com/9de04501-7712-4a85-82eb-a2447912823e" ,
-                target="_blank"><span>🎓</span>Snowflake Certified: SnowPro Core</a>
-        </div>
-
-        <div class="card--project">
-            <a href="https://learn.microsoft.com/en-us/users/bdhanush-7900/credentials/785e70180df096b7" ,
-                target="_blank"><span>🎓</span>Microsoft Azure AI : 900</a>
-        </div>
-
-        <div class="card--project">
-            <a href="https://learn.microsoft.com/en-us/users/bdhanush-7900/credentials/db88be84e2fafadb" ,
-                target="_blank"><span>🎓</span>Microsoft Azure AZ : 900</a>
-        </div>
-
-        <div class="card--project">
-            <a><span>🎓</span>Course Completion on Blockchain, Microsoft Fabric, MongoDB, GenAI: Prompt Engineering,
-                DataStreaming and Batch Processing</a>
-        </div>
-
+                </div>
+            </div>
         </section>
 
+        <!-- Tech Stack Section -->
         <section class="section--page">
-            <h2>Rewards and Recognitions</h2>
-            <div class="scroll-container">
-                <!-- Tile 1 -->
-                <div class="tile outlier">
-                    <div class="tile-img">
-                        <img src="assets/images/Hi_fi.png" alt="Employee of the Year 2023">
-                    </div>
-                    <div class="tile-text">
-                        <p>🏆 HI-FI Badge for Problem Solving</p>
+            <h2 class="section-title">Technical Stack</h2>
+            <div class="tech-stack-container">
+                <div class="tech-category">
+                    <h3>Programming Languages</h3>
+                    <div id="wrapper--techstack__items">
+                        <div class="card--techstack"><span>Python</span></div>
+                        <div class="card--techstack"><span>JavaScript</span></div>
+                        <div class="card--techstack"><span>Node.js</span></div>
+                        <div class="card--techstack"><span>SQL</span></div>
                     </div>
                 </div>
-                <!-- Tile 2 -->
-                <div class="tile">
-                    <div class="tile-img">
-                        <img src="assets/images/Coach.png" alt="Innovator's Award for AI Development">
+                <div class="tech-category">
+                    <h3>Cloud Platforms</h3>
+                    <div class="tech-stack-row">
+                        <div class="card--techstack"><span>Google Cloud Platform</span></div>
+                        <div class="card--techstack"><span>Microsoft Azure</span></div>
+                        <div class="card--techstack"><span>AWS</span></div>
                     </div>
-                    <div class="tile-text">
-                        <p>🏆 Received Coach in guiding</p>
+                </div>
+                <div class="tech-category">
+                    <h3>AI & Data Technologies</h3>
+                    <div class="tech-stack-row">
+                        <div class="card--techstack"><span>NLP & CLU</span></div>
+                        <div class="card--techstack"><span>Generative AI</span></div>
+                        <div class="card--techstack"><span>Machine Learning</span></div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Databases</h3>
+                    <div class="tech-stack-row">
+                        <div class="card--techstack"><span>MongoDB</span></div>
+                        <div class="card--techstack"><span>MySQL</span></div>
+                        <div class="card--techstack"><span>Snowflake</span></div>
+                        <div class="card--techstack"><span>Cloud Databases</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work History Section -->
+        <section id="work-history-wrapper" class="section--page">
+            <h2 class="section-title">Work History</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="work-header">
+                            <h3>🚧 Associate Engineer | LTIMindtree</h3>
+                            <span class="work-duration">01/2022 - Present</span>
+                        </div>
+                        <div class="work-description">
+                            <p><strong>[Current Role]</strong> Working on developing and implementing an IVR Bot for Currys,
+                                automating ticket status updates and reducing agent workload by handling over 1,000 calls daily.
+                                Integrated API calls to the Ticket System, cleansing data and converting it into conversational
+                                responses using TTS services.</p>
+                            
+                            <div class="achievements">
+                                <h4>Key Achievements:</h4>
+                                <ul>
+                                    <li>Enhanced the internal LMS by curating high-quality content for learners and providing training
+                                        for certification preparation</li>
+                                    <li>Developed and implemented an IVR Bot for Currys, automating ticket status updates and
+                                        significantly reducing agent workload</li>
+                                    <li>Supported practice teams in building demos for clients, showcasing innovative solutions and
+                                        capabilities</li>
+                                    <li>Worked on an eye-tracking project using Python, contributing to research on engagement scores
+                                        and website pattern recognition through heatmap analysis</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="additional-roles">
+                                <h4>Additional Responsibilities:</h4>
+                                <ul>
+                                    <li>As a Content Partner, curated and validated over 250 Data and GenAI courses for the internal LMS</li>
+                                    <li>Trained over 300 engineers on Google Cloud and Snowflake, focusing on certification preparation</li>
+                                    <li>Led quick brush-up sessions on GCP Services, Azure Containers, and Data Fabric for over 100 learners</li>
+                                    <li>Currently pursuing an MTech in Computer Science with specialization at BITS Pilani</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section--page">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>🎯 Voice Conversation IVR System</h3>
+                        <span class="project-type">Client Project</span>
+                    </div>
+                    <p class="project-description">Developed and implemented a comprehensive IVR Bot for Currys, automating ticket status updates and handling over 1,000 calls daily.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Azure</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">TTS</span>
+                        <span class="tech-tag">API Integration</span>
+                    </div>
+                    <a href="project1.html" class="project-link">View Details →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>🎯 LMS Content Curation</h3>
+                        <span class="project-type">Internal Initiative</span>
+                    </div>
+                    <p class="project-description">As a Content Partner, curated and validated over 250 Data and GenAI courses for the internal LMS, exploring and integrating new GenAI courses.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Content Management</span>
+                        <span class="tech-tag">GenAI</span>
+                        <span class="tech-tag">LMS</span>
+                        <span class="tech-tag">Training</span>
+                    </div>
+                    <a href="project2.html" class="project-link">View Details →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>🎯 Cloud Training Program</h3>
+                        <span class="project-type">Training Initiative</span>
+                    </div>
+                    <p class="project-description">Trained more than 300+ Engineers on Google Cloud and Snowflake, focusing on certification preparation with high feedback ratings.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">GCP</span>
+                        <span class="tech-tag">Snowflake</span>
+                        <span class="tech-tag">Training</span>
+                        <span class="tech-tag">Certification</span>
+                    </div>
+                    <a href="project3.html" class="project-link">View Details →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>🎯 Eye-Tracking Research Project</h3>
+                        <span class="project-type">Research & Development</span>
+                    </div>
+                    <p class="project-description">Contributed to research on engagement scores and website pattern recognition through heatmap analysis using Python.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Data Analysis</span>
+                        <span class="tech-tag">Research</span>
+                        <span class="tech-tag">Visualization</span>
+                    </div>
+                    <span class="project-status">Ongoing</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section--page">
+            <h2 class="section-title">Educational Background</h2>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3>🎓 Bachelor of Computer Application</h3>
+                        <span class="education-year">2021</span>
+                    </div>
+                    <div class="education-details">
+                        <p><strong>CGPA:</strong> 8.82</p>
+                        <p><strong>University:</strong> Vijayanagara Srikrishnadevaraya University, Bellary</p>
                     </div>
                 </div>
                 
-                <!-- Tile 3 -->
-                <div class="tile">
-                    <div class="tile-img">
-                        <img src="assets/images/Team Player.png" alt="Innovator's Award for AI Development">
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3>🎓 Pre University Education (Computer Science)</h3>
+                        <span class="education-year">2018</span>
                     </div>
-                    <div class="tile-text">
-                        <p>🏆 3X Team Player</p>
+                    <div class="education-details">
+                        <p><strong>Percentage:</strong> 70.82%</p>
+                        <p><strong>Institution:</strong> Independent PU College</p>
+                    </div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3>🎓 Secondary School Leaving Certificate</h3>
+                        <span class="education-year">2016</span>
+                    </div>
+                    <div class="education-details">
+                        <p><strong>Percentage:</strong> 78.56%</p>
+                        <p><strong>School:</strong> Nivedita School</p>
+                    </div>
+                </div>
+                
+                <div class="education-item current">
+                    <div class="education-header">
+                        <h3>🎓 MTech in Computer Science (Ongoing)</h3>
+                        <span class="education-year">2024 - Present</span>
+                    </div>
+                    <div class="education-details">
+                        <p><strong>Institution:</strong> BITS Pilani</p>
+                        <p><strong>Specialization:</strong> Computer Science</p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Linking JavaScript file -->
-        <script src="scripts.js"></script>
         
 
+        <!-- Certifications Section -->
+        <section class="section--page">
+            <h2 class="section-title">Professional Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="cert-icon">🏆</div>
+                    <div class="cert-content">
+                        <h3>Google Certified: Professional Cloud Architect</h3>
+                        <p class="cert-issuer">Google Cloud</p>
+                        <a href="https://google.accredible.com/dd1b062d-147b-4d9e-82cd-ade91721a9d8" target="_blank" class="cert-link">View Credential</a>
+                    </div>
+                </div>
+                
+                <div class="certification-card">
+                    <div class="cert-icon">🏆</div>
+                    <div class="cert-content">
+                        <h3>Google Certified: Associate Cloud Engineer</h3>
+                        <p class="cert-issuer">Google Cloud</p>
+                        <a href="https://www.credential.net/8ce04015-c4f5-438f-8fb2-926093792478?key=73790c2d0a9ad40a7065c43f235b8a411cd896fab2d79843900e4d368dd25fd6" target="_blank" class="cert-link">View Credential</a>
+                    </div>
+                </div>
+                
+                <div class="certification-card">
+                    <div class="cert-icon">🏆</div>
+                    <div class="cert-content">
+                        <h3>Snowflake Certified: SnowPro Core</h3>
+                        <p class="cert-issuer">Snowflake</p>
+                        <a href="https://achieve.snowflake.com/9de04501-7712-4a85-82eb-a2447912823e" target="_blank" class="cert-link">View Credential</a>
+                    </div>
+                </div>
+                
+                <div class="certification-card">
+                    <div class="cert-icon">🏆</div>
+                    <div class="cert-content">
+                        <h3>Microsoft Azure AI Fundamentals (AZ-900)</h3>
+                        <p class="cert-issuer">Microsoft</p>
+                        <a href="https://learn.microsoft.com/en-us/users/bdhanush-7900/credentials/785e70180df096b7" target="_blank" class="cert-link">View Credential</a>
+                    </div>
+                </div>
+                
+                <div class="certification-card">
+                    <div class="cert-icon">🏆</div>
+                    <div class="cert-content">
+                        <h3>Microsoft Azure Fundamentals (AZ-900)</h3>
+                        <p class="cert-issuer">Microsoft</p>
+                        <a href="https://learn.microsoft.com/en-us/users/bdhanush-7900/credentials/db88be84e2fafadb" target="_blank" class="cert-link">View Credential</a>
+                    </div>
+                </div>
+                
+                <div class="certification-card">
+                    <div class="cert-icon">📚</div>
+                    <div class="cert-content">
+                        <h3>Additional Course Completions</h3>
+                        <p class="cert-issuer">Various Platforms</p>
+                        <p class="cert-description">Blockchain, Microsoft Fabric, MongoDB, GenAI: Prompt Engineering, Data Streaming and Batch Processing</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    </div>
+        <!-- Awards & Recognition Section -->
+        <section class="section--page">
+            <h2 class="section-title">Awards & Recognition</h2>
+            <div class="awards-container">
+                <div class="award-card featured">
+                    <div class="award-image">
+                        <img src="assets/images/Hi_fi.png" alt="HI-FI Badge for Problem Solving">
+                    </div>
+                    <div class="award-content">
+                        <h3>🏆 HI-FI Badge for Problem Solving</h3>
+                        <p>Recognized for exceptional problem-solving skills and innovative solutions</p>
+                    </div>
+                </div>
+                
+                <div class="award-card">
+                    <div class="award-image">
+                        <img src="assets/images/Coach.png" alt="Coach Recognition">
+                    </div>
+                    <div class="award-content">
+                        <h3>🏆 Coach Recognition</h3>
+                        <p>Recognized for mentoring and guiding team members</p>
+                    </div>
+                </div>
+                
+                <div class="award-card">
+                    <div class="award-image">
+                        <img src="assets/images/Team Player.png" alt="Team Player Award">
+                    </div>
+                    <div class="award-content">
+                        <h3>🏆 3X Team Player Award</h3>
+                        <p>Consistently recognized for outstanding teamwork and collaboration</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="section--page">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div>
+                            <h3>Email</h3>
+                            <p>DhanushBattepati@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 807 316 0196</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Bangalore, India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <p>Ready to collaborate on your next project?</p>
+                    <a href="mailto:DhanushBattepati@gmail.com" class="cta-button">Let's Connect</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Theme Switcher -->
     <div id="theme-switcher">
-        <div class="theme" id="theme-light" data-theme="light"></div>
-        <div class="theme" id="theme-dark" data-theme="dark"></div>
+        <div class="theme" id="theme-light" data-theme="light" title="Light Theme"></div>
+        <div class="theme" id="theme-dark" data-theme="dark" title="Dark Theme"></div>
     </div>
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" title="Back to Top">↑</button>
 
-<!--     
-    Floating Chatbot Button
-<button id="chatbot-button">💬</button>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 B Dhanush. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/bdhanush/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/demo-helloworld-1" target="_blank">GitHub</a>
+                <a href="./assets/Dhanush_B_Resume_2025_July.pdf" target="_blank">Resume</a>
+            </div>
+        </div>
+    </footer>
 
-Chatbot Container
-<div class="chatbot-container" id="chatbot-container">
-    <div class="chatbot-header">
-        Personal Portfolio Bot
-    </div>
-    <iframe src='https://webchat.botframework.com/embed/PersonalPortfolioBot?s=5EiM1nbpTWH0Mnk7MIaGWdFFMNbFNsCbHIaYbRcubOFir0ZxZHh1JQQJ99BCACL93NaAArohAAABAZBS2WU4.BIyWem37QkxaHsPqpszq5ZXiAlHKWnS45kZp7JpAH4IwKaJk1o9uJQQJ99BCACL93NaAArohAAABAZBS28Dv' title="Personal Portfolio Bot"></iframe>
-    <button class="close-button" onclick="toggleChatbot()">Close</button>
-</div>
-<script src="js/chatbot.js"></script> -->
-
-
+    <!-- Scripts -->
+    <script src="js/theme-switcher.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
 </body>
-<script src="js/theme-switcher.js"></script>
 
 </html>

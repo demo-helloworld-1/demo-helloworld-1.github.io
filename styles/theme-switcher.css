@@ -1,43 +1,137 @@
-#theme-switcher{
+#theme-switcher {
     position: fixed;
-    right:1em;
-    top: 1em;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
     display: flex;
-    gap: 10px;
-    cursor: pointer;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: var(--cardBg);
+    padding: 0.5rem;
+    border-radius: 25px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--mainBorderColor);
+    backdrop-filter: blur(10px);
 }
 
-.theme{
-    height: 30px;
-    width: 30px;
+.theme {
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
-    transition: 0.3s;
-    border: 1px solid;
+    cursor: pointer;
+    border: 2px solid var(--mainBorderColor);
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
-.theme:hover{
-    height: 33px;
-    width: 33px;
+.theme:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadowHover);
 }
 
-#theme-dark{
-    background-color: #000;
-    /* border-color: #fff; */
+.theme::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
 }
 
-#theme-light{
-    background-color: #fff;
-    /* border-color: #000; */
+#theme-light {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
 }
 
-#theme-1{
-    background-color: #999ECD;
+#theme-light::before {
+    background: #ffd700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
 }
 
-#theme-2{
-    background-color: #73B5DE;
+#theme-dark {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
 }
 
-#theme-3{
-    background-color: #AD7EAD;
+#theme-dark::before {
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.theme.active {
+    border-color: var(--accentColor);
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.25);
+    transform: scale(1.05);
+}
+
+.theme.active::before {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+/* Tooltip styles */
+.theme[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--mainTextColor);
+    color: var(--mainBgColor);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    z-index: 1001;
+    box-shadow: var(--shadow);
+}
+
+.theme[title]:hover::before {
+    content: '';
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 5px solid transparent;
+    border-left-color: var(--mainTextColor);
+    z-index: 1001;
+}
+
+/* Responsive design for theme switcher */
+@media (max-width: 768px) {
+    #theme-switcher {
+        bottom: 1rem;
+        right: 1rem;
+        flex-direction: row;
+        padding: 0.3rem;
+    }
+    
+    .theme {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .theme::before {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #theme-switcher {
+        bottom: 0.5rem;
+        right: 0.5rem;
+    }
+    
+    .theme {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .theme::before {
+        width: 14px;
+        height: 14px;
+    }
 }
