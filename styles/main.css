@@ -33,6 +33,7 @@ body{
 p, span, li{
     color: var(--secondaryTextColor);
     font-size: 1em;
+    text-align: justify;
 }
 
 a{
@@ -46,7 +47,7 @@ li{
 }
 
 #container--main{
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 1em;
 }
@@ -272,3 +273,4 @@ iframe {
     padding: 5px 10px;
     cursor: pointer;
 }
+
