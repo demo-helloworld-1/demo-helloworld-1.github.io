@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,285 +7,52 @@
     <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/theme-switcher.css">
-    <link rel="stylesheet" href="./styles/R&R.css">
-
-
-
+    <link rel="stylesheet" href="./styles/revamp.css">
 </head>
-
 <body>
-    <div id="container--main">
+    <div id="bot-container">
+        <img id="bot-avatar" src="assets/images/bot.png" alt="Chatbot Avatar">
+    </div>
+    <div id="chat-container">
+        <!-- Chat messages will be dynamically added here -->
+    </div>
 
-        <section id="wrapper--hero" class="section--page">
-            <img id="profile-pic" src="./assets/images/Profile.jpg">
-
-            <div>
-                <h1 id="user-name">B Dhanush</h1>
-                <p id="bio">A Software Engineer specializing in building and deploying enterprise-grade Generative and Conversational AI solutions.</p>
-                <p id="email"> &#128236; DhanushBattepati@gmail.com</p>
-                <p id="phone-number">&#x1F4DE; +91 807 316 0196</p>
-            </div>
-        </section>
-
-        <section class="section--page">
-            <h2>About Me</h2>
-            <p>A software engineer with a proven track record of building and deploying AI-powered solutions. My expertise lies in developing sophisticated AI agents using Python, LangChain, and Azure OpenAI, as well as creating conversational AI for enterprise contact centers with Node.js and Microsoft Bot Framework. I have hands-on experience in fine-tuning large language models like Llama 2 and creating high-impact technical Proofs of Concept that drive business development. With a strong foundation in data engineering and cloud platforms like GCP and Azure, I am passionate about leveraging AI to solve complex business problems.</p>
-        </section>
-
-        <section class="section--page">
-
-            <div id="socials--list">
-                <a href="https://www.linkedin.com/in/bdhanush/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/demo-helloworld-1" target="_blank">Github</a>
-                <a href="./assets/Dhanush_B_Resume_2025_July.pdf" target="_blank">Download Resume</a>
-            </div>
-        </section>
-
-        <section class="section--page">
-            <h2>Total Professional Experience</h2>
-            <p id="experience"></p>
-        </section>
-        <script src="js/experience.js"></script>
-
-        <section class="section--page">
-            <h2>Skills & Experience</h2>
-            <ul id="qualifications--list">
-                <li>
-                    <strong>AI & Machine Learning</strong>
-                    <ul>
-                        <li>LLM Frameworks: LangChain, CrewAI, LangGraph</li>
-                        <li>Generative AI: Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), Prompt Engineering, AI Agent Context Modeling/Protocol, AI Agents</li>
-                        <li>Model Specialization: LLM Fine-tuning, LoRA, Llama 2, FLUX (Image Generation), Media-Pipe</li>
-                        <li>Conversational AI: Microsoft Bot Framework, Azure CLU, Amazon Lex, Amazon Connect</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Cloud Platforms & Services</strong>
-                    <ul>
-                        <li>Microsoft Azure: Azure Open-AI Services, Azure Cognitive Services, Azure App Services</li>
-                        <li>Amazon Web Services (AWS): AWS Lex, Amazon Connect, AWS Lambda</li>
-                        <li>Google Cloud (GCP): Core Platform Services</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Programming & Development</strong>
-                    <ul>
-                        <li>Languages: Python, Node.js</li>
-                        <li>Dev Tools & CI/CD: Git, GitHub, Azure DevOps, REST APIs</li>
-                        <li>Databases: Azure SQL (and other relational/NoSQL databases)</li>
-                    </ul>
-                </li>
+    <!-- Modals for projects -->
+    <div id="project1-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h1>Worked on Client Project Implementing Voice Conversation IVR for one of the UseCase</h1>
+            <p>Developed and implemented an IVR Bot for Currys, significantly reducing the workload on agents by automating ticket status updates. The bot efficiently handled over 1,000 calls daily from employees seeking quick updates on incident/request tickets, streamlining operations and enhancing productivity.</p>
+            <p>Integrated API calls to the Ticket System to retrieve and cleanse data, extracting only the necessary information. Converted this data into conversational responses using TTS services, which were then delivered through the telephone layer, enhancing the efficiency and user experience of the IVR Bot.</p>
+            <ul>
+                <li>Developed and implemented an IVR Bot for Currys, automating ticket status updates and reducing agent workload by handling over 1,000 calls daily.</li>
+                <li>Integrated API calls to the Ticket System, cleansing data to extract necessary information and converting it into conversational responses.</li>
+                <li>Utilized TTS services to deliver responses through the telephone layer, enhancing the efficiency and user experience of the IVR Bot</li>
             </ul>
-        </section>
+        </div>
+    </div>
 
-        <section class="section--page">
-            <h2>Tech stack</h2>
+    <div id="project2-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h1>As a Content Partner brought 250+ Data and GenAI courses on LMS</h1>
+            <p>As a Content Partner, I curated and validated over 250 Data and GenAI courses for our internal LMS, ensuring high-quality content for learners. Recognizing the growing importance of GenAI, I proactively explored and integrated new GenAI courses into the LMS, staying ahead of market trends and enhancing the learning experience. My role in L&D involved continuously updating and improving the course offerings, leveraging my expertise to provide valuable educational resources.</p>
+        </div>
+    </div>
 
-            <div id="wrapper--techstack__items">
-                <div class="card--techstack"><span>Python, JavaScript, NodeJS</span></div>
-                <div class="card--techstack"><span>Azure, AWS, Google Cloud</span></div>
-                <div class="card--techstack"><span>NLP, CLU, Generative AI</span></div>
-                <div class="card--techstack"><span>MongoDB, MySQL, Cloud Databases</span></div>
-            </div>
-        </section>
-
-        <section id="work-history-wrapper" class="section--page">
-            <h2>Work History</h2>
-            <div class="card--work-history">
-                <strong>AI/ML ENGINEER (OFFICIAL TITLE: TRAINEE ENGINEER) | LTIMINDTREE, Bangalore</strong>
-                <p>Feb 2023 - Present</p>
-                <ul>
-                    <li>Spearheaded the development of a new AI Agent platform for marketers, leading a team of 6 engineers from initial ideation and architecture through to final deployment. This agent is designed to automate the entire content lifecycle from brief creation to performance monitoring by leveraging LangChain, LangGraph and Azure OpenAI Models.</li>
-                    <li>Engineered and deployed custom Generative AI models by fine-tuning open-source foundations. This includes:
-                        <ul>
-                            <li>Fine-tuning the FLUX image generation model with LoRA to create specialized promotional content.</li>
-                            <li>Deploying a fine-tuned Llama 2 model on a local server, creating an internal chatbot that increased team productivity by automating content generation. Worked on create a Smart Agent Dashboard, where we can leverage AI capabilities in Contact Center.</li>
-                        </ul>
-                    </li>
-                    <li>Drove client solutioning by developing multiple high-impact Proofs of Concept (POCs) and technical demos, directly contributing to RFPs and business development efforts. Key projects include:
-                        <ul>
-                            <li>Architected a client-specific POC for a Learning Management System (LMS) using a RAG (Retrieval-Augmented Generation) framework to provide hyper-personalized content to users.</li>
-                            <li>Built a Gaze Point detection system with Python and Media-Pipe to analyze UI/UX effectiveness by creating heatmap patterns of user attention.</li>
-                            <li>Developed and delivered custom AI-powered demos leveraging Azure Open-AI Services to showcase capabilities in dynamic product description generation, context aware language translation automated meta-tagging, and persona-based marketing content.</li>
-                            <li>Enhanced enterprise contact center capabilities by integrating new features into a client's Microsoft Bot Framework IVR solution and building corresponding Conversational Language Understanding (CLU) models in Azure.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="card--work-history">
-                <strong>Selected Project Experience</strong>
-                <p>IVR and Chatbot on Node.js and Microsoft Bot Framework.</p>
-                <ul>
-                    <li>Introduced 2 new feature in the existing Contact Center built on Microsoft Bot Framework using Node.js</li>
-                    <li>Created a new CLU model in Azure Language Studio, by validating F1 Scores and Performance Matrix. </li>
-                    <li>Integrated the new RESTful APIs of Service Now with respect to the new features and deployed in Azure App Services.</li>
-                    <li>Written an In-House Python script to restore the data for Database from Logs when the Database was down for 5 days.</li>
-                </ul>
-            </div>
-            <div class="card--work-history">
-                <strong>Apprentice | MINDTREE, Bangalore</strong>
-                <p>Jan 2022 - Jan 2023</p>
-                <ul>
-                    <li>Working as a Content Partner for internal LMS by creating and curating 250 courses on data.</li>
-                    <li>Internal SME for GCP and drove 4 Certification sessions and multiple calendar sessions for upskilling the corporate employees.</li>
-                    <li>Introduced more than 40 courses in LMS on GenAI by curating them and creating the assessments for learning validation for the learners.</li>
-                    <li>Worked as Technical SME and Technical Co-Ordinator for Internal Hackathon as a learning behavior for internal associates.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section--page">
-            <h2>Projects & Accomplishments</h2>
-
-            <div class="card--project">
-                <a href="project1.html"><span>🎯 </span>Worked on Client Project Implementing Voice Conversation IVR for
-                    one of the UseCase</a>
-            </div>
-
-            <div class="card--project">
-                <a href="project2.html"><span>🎯 </span>As a Content Partner brought 250+ Data and GenAI courses on
-                    LMS</a>
-            </div>
-
-            <div class="card--project">
-                <a href="project3.html"><span>🎯 </span>Trained more than 300+ Engineers on Google Cloud and Snowflake
-                    for cracking the Certification</a>
-            </div>
-
-            <div class="card--project">
-                <span>🎯 </span>Currently pursuing an MTech in Computer Science as specialization at BITS Pilani.
-            </div>
-
-        </section>
-
-        <section class="section--page">
-            <h2>Educational Qualifications</h2>
-            <ul id="qualifications--list" class="custom-list-2">
-                <li class="qualification-item">
-                    <strong>10th Grade: Secondary School Leaving Certificate</strong>
-                    <ul class="details-list">
-                        <li>Percentage: 78.56%</li>
-                        <li>Year of Completion: 2016</li>
-                        <li>School Name: Nivedita School</li>
-                    </ul>
-                </li>
-                <li class="qualification-item">
-                    <strong>12th Grade: Pre University Education (Computer Science Stream)</strong>
-                    <ul class="details-list">
-                        <li>Percentage: 70.82%</li>
-                        <li>Year of Completion: 2018</li>
-                        <li>School Name: Independent PU College</li>
-                    </ul>
-                </li>
-                <li class="qualification-item">
-                    <strong>Bachelor's Degree: Bachelor of Computer Application</strong>
-                    <ul class="details-list">
-                        <li>Percentage: 8.82 C.G.P.A</li>
-                        <li>Year of Completion: 2021</li>
-                        <li>College/University Name: Vijayanagara Srikrishnadevaraya University, Bellary</li>
-                    </ul>
-                </li>
+    <div id="project3-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h1>Trained more than 300+ Engineers on Google Cloud and Snowflake for cracking the Certification</h1>
+            <p>Trained over 300 engineers on Google Cloud and Snowflake, focusing on certification preparation for the Professional Data Engineer and SnowPro Core certificates. As a Junior SME in Google Cloud Platform within the L&D team, I conducted virtual sessions with feedback ratings above 4.2, resulting in a high success rate among learners. Additionally, I led quick brush-up sessions on GCP Services, Azure Containers, and Data Fabric for over 100 learners, enhancing their skills and readiness for certification.</p>
+            <ul>
+                <li>Trained over 300 engineers on Google Cloud Data Engineering and Snowflake - SnowPro Core, focusing on certification preparation</li>
+                <li>Conducted virtual sessions as a Junior SME in Google Cloud Platform</li>
+                <li>Led quick brush-up sessions on GCP Services, Azure Containers, and Data Fabric</li>
             </ul>
-        </section>
-
-
-        <section class="section--page"></section>
-        <h2>Training and Certifications</h2>
-
-        <div class="card--project">
-            <a href="https://www.credential.net/8ce04015-c4f5-438f-8fb2-926093792478?key=73790c2d0a9ad40a7065c43f235b8a411cd896fab2d79843900e4d368dd25fd6"
-                , target="_blank"><span>🎓</span>Google Certified: Associate Cloud Engineer</a>
         </div>
-
-        <div class="card--project">
-            <a href="https://google.accredible.com/dd1b062d-147b-4d9e-82cd-ade91721a9d8" ,
-                target="_blank"><span>🎓</span>Google Certified: Professional Cloud Architect</a>
-        </div>
-
-        <div class="card--project">
-            <a href="https://achieve.snowflake.com/9de04501-7712-4a85-82eb-a2447912823e" ,
-                target="_blank"><span>🎓</span>Snowflake Certified: SnowPro Core</a>
-        </div>
-
-        <div class="card--project">
-            <a href="https://learn.microsoft.com/en-us/users/bdhanush-7900/credentials/785e70180df096b7" ,
-                target="_blank"><span>🎓</span>Microsoft Azure AI : 900</a>
-        </div>
-
-        <div class="card--project">
-            <a href="https://learn.microsoft.com/en-us/users/bdhanush-7900/credentials/db88be84e2fafadb" ,
-                target="_blank"><span>🎓</span>Microsoft Azure AZ : 900</a>
-        </div>
-
-        <div class="card--project">
-            <a><span>🎓</span>Course Completion on Blockchain, Microsoft Fabric, MongoDB, GenAI: Prompt Engineering,
-                DataStreaming and Batch Processing</a>
-        </div>
-
-        </section>
-
-        <section class="section--page">
-            <h2>Rewards and Recognitions</h2>
-            <div class="scroll-container">
-                <!-- Tile 1 -->
-                <div class="tile outlier">
-                    <div class="tile-img">
-                        <img src="assets/images/Hi_fi.png" alt="Employee of the Year 2023">
-                    </div>
-                    <div class="tile-text">
-                        <p>🏆 HI-FI Badge for Problem Solving</p>
-                    </div>
-                </div>
-                <!-- Tile 2 -->
-                <div class="tile">
-                    <div class="tile-img">
-                        <img src="assets/images/Coach.png" alt="Innovator's Award for AI Development">
-                    </div>
-                    <div class="tile-text">
-                        <p>🏆 Received Coach in guiding</p>
-                    </div>
-                </div>
-
-                <!-- Tile 3 -->
-                <div class="tile">
-                    <div class="tile-img">
-                        <img src="assets/images/Team Player.png" alt="Innovator's Award for AI Development">
-                    </div>
-                    <div class="tile-text">
-                        <p>🏆 3X Team Player</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Linking JavaScript file -->
-        <script src="scripts.js"></script>
-
-
-
-    </div>
-    <div id="theme-switcher">
-        <div class="theme" id="theme-light" data-theme="light"></div>
-        <div class="theme" id="theme-dark" data-theme="dark"></div>
     </div>
 
-<!--
-    Floating Chatbot Button
-<button id="chatbot-button">💬</button>
-
-Chatbot Container
-<div class="chatbot-container" id="chatbot-container">
-    <div class="chatbot-header">
-        Personal Portfolio Bot
-    </div>
-    <iframe src='https://webchat.botframework.com/embed/PersonalPortfolioBot?s=5EiM1nbpTWH0Mnk7MIaGWdFFMNbFNsCbHIaYbRcubOFir0ZxZHh1JQQJ99BCACL93NaAArohAAABAZBS2WU4.BIyWem37QkxaHsPqpszq5ZXiAlHKWnS45kZp7JpAH4IwKaJk1o9uJQQJ99BCACL93NaAArohAAABAZBS28Dv' title="Personal Portfolio Bot"></iframe>
-    <button class="close-button" onclick="toggleChatbot()">Close</button>
-</div>
-<script src="js/chatbot.js"></script> -->
-
-
+    <script src="js/revamp.js"></script>
 </body>
-<script src="js/theme-switcher.js"></script>
-
 </html>
